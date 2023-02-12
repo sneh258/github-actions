@@ -209,7 +209,9 @@ describe('ToDo Controllers', () => {
 
         const mockRes = {
 
-            
+            status: jest.fn().mockReturnThis(),
+            json: jest.fn()
+
         };
         await getControllers.postTasks(mockReq, mockRes);
         expect(mockRes.status).toBeCalledWith(201);
@@ -231,7 +233,7 @@ describe('ToDo Controllers', () => {
         jest.spyOn(getServices, 'postTasks').mockRejectedValue(new Error('Internal Server error!!'));
 
         const mockReq = {
-           
+            body: jest.fn()
         };
 
         const mockRes = {
