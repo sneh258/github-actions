@@ -209,9 +209,7 @@ describe('ToDo Controllers', () => {
 
         const mockRes = {
 
-            status: jest.fn().mockReturnThis(),
-            json: jest.fn()
-
+            
         };
         await getControllers.postTasks(mockReq, mockRes);
         expect(mockRes.status).toBeCalledWith(201);
