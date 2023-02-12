@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm install jest
     - run: npm test toDoServices.test.js
-    - run: npm test toDoController.test.js
+    - run: npm test toDoControllers.test.js
