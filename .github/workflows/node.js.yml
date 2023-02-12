@@ -26,5 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: ls
+    - run: npm install jest
     - run: npm test toDoServices.test.js
