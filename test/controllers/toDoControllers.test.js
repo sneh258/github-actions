@@ -233,7 +233,7 @@ describe('ToDo Controllers', () => {
         jest.spyOn(getServices, 'postTasks').mockRejectedValue(new Error('Internal Server error!!'));
 
         const mockReq = {
-            body: jest.fn()
+           
         };
 
         const mockRes = {
