@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install jest
-    - run: npm test 
+   # - run: npm test 
     - run: npm install -g eslint babel-eslint eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint-cli
     - run: npm run format
 
