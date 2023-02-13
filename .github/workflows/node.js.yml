@@ -38,5 +38,7 @@ jobs:
 
     - name: Install dependencies for linting
       run: npm install -g eslint @babel/eslint-parser eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint-cli
-    - name: Run unit tests
+    - name: config eslint
+      run: npm init @eslint/config
+    - name: run eslint
       run: npx eslint ./  
