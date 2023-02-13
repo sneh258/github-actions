@@ -37,7 +37,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies for linting
-      run: npm install -g eslint @babel/eslint-parser eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint-cli
+      run: npm install 
     - name: config eslint
       run: npm init @eslint/config
     - name: run eslint
